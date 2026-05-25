@@ -1,7 +1,7 @@
-# README - Buzzer Batida (Beethoven's 5th Symphony)
+# README - Buzzer Batida
 
 ## Descrição e Funcionamento
-Este projeto utiliza um sensor digital para disparar uma melodia rítmica clássica (o famoso "Dun, dun, dun... da-da, dun" da 5ª Sinfonia de Beethoven) através de um buzzer piezoelétrico. O circuito baseia-se numa leitura de entrada configurada com o resistor de pull-up interno do microcontrolador, o que garante estabilidade no sinal elétrico e evita a captação de ruídos mecânicos ou eletromagnéticos do ambiente. 
+Este projeto utiliza um sensor digital para disparar uma melodia rítmica clássica, marcha imperial (Star Wars), através de um buzzer piezoelétrico. O circuito baseia-se numa leitura de entrada configurada com o resistor de pull-up interno do microcontrolador, o que garante estabilidade no sinal elétrico e evita a captação de ruídos mecânicos ou eletromagnéticos do ambiente. 
 
 Quando o sensor é ativado (sinal vai para nível lógico BAIXO, pois está conectado ao GND), o microcontrolador executa uma função customizada para gerar as ondas sonoras manualmente, alternando o estado do pino do buzzer entre ligado e desligado com tempos controlados em microssegundos. Após tocar a melodia, o programa introduz uma pausa de 3 segundos como uma proteção (debounce de longa duração) para evitar reacionamentos acidentais consecutivos.
 
